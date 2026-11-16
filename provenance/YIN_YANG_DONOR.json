@@ -1,0 +1,136 @@
+{
+  "tag": "earth-two-cap-student-20261021",
+  "commit": "02a86e330e365507e01c7819ec6dc9c47b8f5348",
+  "source_commit": "3a51143dd04c94de2770041a5cf0b6c22fbf3eb1",
+  "tree_sha": "9a762c0f1a986030d1f067afd264adb1aca68f2d",
+  "published_at": "2026-10-21T06:44:14Z",
+  "release_url": "https://github.com/Space-Mafia/GAMERA-OP/releases/tag/earth-two-cap-student-20261021",
+  "is_draft": false,
+  "is_prerelease": false,
+  "local_git_and_publication_record_verified": true,
+  "online_check": "Connected GitHub returned404 for access-controlled repository; do not claim live remote verification",
+  "source_files": [
+    {
+      "path": "nonorthogonal/src/nonorthogonal_backend/magnetic_tracer.h",
+      "bytes": 9393,
+      "sha256": "d44631cfa4c9d5c029e8af1bcbcff227f9cd85b5b0824f8f1ef19bcb2abfd7ae",
+      "git_blob": "7daa0113ea3c6ca38308b8a95e09ae2534d06a50"
+    },
+    {
+      "path": "nonorthogonal/src/background_coeffs.h",
+      "bytes": 2114,
+      "sha256": "e07b15a704841612ae7f0787e365bc75da46cb969720fd9e53143b9df9bd9bcd",
+      "git_blob": "30007c56a45768b3cf7f35b998260cee02e2f7e6"
+    },
+    {
+      "path": "nonorthogonal/src/config.h",
+      "bytes": 16126,
+      "sha256": "80cd1523b210b331fe752661f50cf49543f2b9f1a1ebbc4b21107d3c6d8f5cc3",
+      "git_blob": "79f54819a481a1c7e16796b819dd1fc8628aa38f"
+    },
+    {
+      "path": "nonorthogonal/src/common.h",
+      "bytes": 2464,
+      "sha256": "9b6467c4dd72e4ef0abedc6c1e4bf7a1824b7e1794061c4b32909bafdf561590",
+      "git_blob": "395489cf531f4f3e1cc630d694e74363a1254247"
+    },
+    {
+      "path": "nonorthogonal/src/problem_nonorthogonal_yinyang_mhd_obstacle.c",
+      "bytes": 88701,
+      "sha256": "5e06e1abe564e87483376b385e2e119f5aff845a24493fb9b9a62dd14037101e",
+      "git_blob": "a78d045d932a6f8d9a7e9605bd0abc9e7121f50f"
+    },
+    {
+      "path": "nonorthogonal/src/nonorthogonal_backend/nonorthogonal_mi_coupling.c",
+      "bytes": 129760,
+      "sha256": "0146ab577ffdafc80733253885317096de0c0f2fdf30d90ca41d265f6c3873e5",
+      "git_blob": "3f6d015357b3fb10899bb2e6f201146afcdfa061"
+    },
+    {
+      "path": "nonorthogonal/src/nonorthogonal_backend/nonorthogonal_mi_coupling.h",
+      "bytes": 4502,
+      "sha256": "80e50405ac90650d32feecd3f7e460b5490d8b6c5ed7e1667868ca87f1a7d991",
+      "git_blob": "f990340d44f1ac6d7a20854b0cdcb1fc335a08a4"
+    },
+    {
+      "path": "nonorthogonal/src/nonorthogonal_backend/refresh_potential_cache.inc",
+      "bytes": 3159,
+      "sha256": "fe935e3e078bb1ca915687c2979594761d88322b2bab9699059c9f0b094993d0",
+      "git_blob": "1605c27f33a7956615a1aa5819a776907115a23f"
+    },
+    {
+      "path": "nonorthogonal/src/nonorthogonal_backend/global_conductance_dpb.inc",
+      "bytes": 7093,
+      "sha256": "e53870b94228574c9029c929b5c0417a6bf62b85760667e38fa06a36f4f5641e",
+      "git_blob": "7ab3b681c7d2abf3dff0d1dd59c103bbd942f553"
+    },
+    {
+      "path": "nonorthogonal/src/nonorthogonal_backend/nonorthogonal_mi_restart.c",
+      "bytes": 29417,
+      "sha256": "99f364dc5c4e05a962d829a7e5df42c1d2a16cb82aee69196eb323318c1e6570",
+      "git_blob": "7cba977c6fdf3d84140bf07f89e3f7dbb9464eea"
+    },
+    {
+      "path": "nonorthogonal/src/nonorthogonal/nonorthogonal_mi.c",
+      "bytes": 46958,
+      "sha256": "8de7107c898b0ce046e0542d8faa7f434f4068a3af30ace8abbb50ab364e25eb",
+      "git_blob": "7874ad45b9d5f76a5fbab0a187dd4183413c4496"
+    },
+    {
+      "path": "nonorthogonal/src/nonorthogonal/caps_checked.c",
+      "bytes": 8116,
+      "sha256": "0a28bf5f0d6967662fa2f9bd78a172c81ff66cd4dcf98a2ace37f60ca9b9cdf0",
+      "git_blob": "a34d4243f075f7ad4d6b3f2083eae2e8fa49a4c6"
+    },
+    {
+      "path": "nonorthogonal/src/nonorthogonal/tensor_direct.inc",
+      "bytes": 4249,
+      "sha256": "8e64b8bfe74a0ce879c149839e8243d37ff8f20909d99ce9af3aef900daa0b48",
+      "git_blob": "70f95b18fe1128de2ee49e46ca77d6e14baee686"
+    },
+    {
+      "path": "nonorthogonal/src/nonorthogonal/tensor_gmres.inc",
+      "bytes": 2614,
+      "sha256": "dae50e103ec6f392850b0f66dd52ad30f05d3a278bf6975adc80b08284d7491f",
+      "git_blob": "870815caef45c1e499ec2151dea9f1f192b68f74"
+    },
+    {
+      "path": "nonorthogonal/CMakeLists.txt",
+      "bytes": 103771,
+      "sha256": "0e1cefc561be73ea3b2c089fe5eb9ddbb814049d09214facedb9ca5816d38ce4",
+      "git_blob": "ca9513e278e415d18fdedba1c670393161bf28f0"
+    },
+    {
+      "path": "nonorthogonal/examples/earth_magnetosphere/two_cap/config.yaml",
+      "bytes": 2661,
+      "sha256": "e07f985c5a0d528e50553e01d39401a46a07e82075cd3b75f66865273b035a90",
+      "git_blob": "d676727cb8e4b1bd3f8ee5a490bafa5aad927b12"
+    },
+    {
+      "path": "docs/earth_igrf_mi_two_cap/MODEL.md",
+      "bytes": 9950,
+      "sha256": "984d177ee89d0f6c199aebc5d3dc41d66b5d4e83282b0c4bec3ce768e4abaffc",
+      "git_blob": "f6360a0dc4416beed251cf8dd63c4a8433933fd6"
+    },
+    {
+      "path": "docs/earth_igrf_mi_two_cap/REPRODUCE.md",
+      "bytes": 6249,
+      "sha256": "5b68035b9d7f7df17e0061f1f08c8d4b067cb12e91c9204355fe9e1f6dcb827c",
+      "git_blob": "1779b20988f1c0da65a733c27472f0abd1813d9c"
+    },
+    {
+      "path": "docs/earth_igrf_mi_two_cap/RELEASE_READINESS_20261021.md",
+      "bytes": 32794,
+      "sha256": "c8cc067bfae69b0033a99b2b978d1bec677785ea8e666f408815d7c2b041cb3d",
+      "git_blob": "1cc6622a61215c0b7a3942735879654f63ff4801"
+    },
+    {
+      "path": "docs/earth_igrf_mi_two_cap/EVENTS.md",
+      "bytes": 6865,
+      "sha256": "714538c956eaa977adcc3c5b9b752b3334836a0344de70c020d215531c51eafc",
+      "git_blob": "8e885e4773f1d025b4fed0f6bed7b637e296a08c"
+    }
+  ],
+  "working_HEAD_not_used_for_reference": true,
+  "working_HEAD": "965d69636044f350458defe6484ad6022bcd33c3"
+}

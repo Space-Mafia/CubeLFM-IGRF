@@ -1,0 +1,17 @@
+{
+  "repository": "Space-Mafia/CubeLFM-IGRF",
+  "visibility": "public",
+  "user_authorization": "\u65b0\u5efa\u72ec\u7acb\u516c\u5f00\u7684 CubeLFM-IGRF \u4ed3\u5e93\uff0c\u4ec5\u53d1\u5e03\u5df2\u9a8c\u6536\u5feb\u7167\uff08\u63a8\u8350\uff09",
+  "source_snapshot_commit": "14df214a72512a25866661d476b671097b44b286",
+  "source_snapshot_path": "releases/cubelfm-igrf-v0.2.0",
+  "snapshot_version": "cubelfm-igrf-v0.2.0",
+  "independent_history": true,
+  "accepted_physical_seconds": 43200,
+  "accepted_fullwait_s": 10789.844918493181,
+  "accepted_whole_process_RT": 4.003764681173281,
+  "source_translation_units": 49,
+  "headers": 12,
+  "source_bytes_unchanged": true,
+  "portable_clean_rebuild_qualified": false,
+  "minimum6_speed_target_met": false
+}

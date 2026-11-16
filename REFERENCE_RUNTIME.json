@@ -1,0 +1,13 @@
+{
+  "binary": "/public/home/binzheng/campaigns/lfm_cube_earth48_b1100_20261106_v1/boundary_domain_tests_20261107/CubeLFM-YY-IGRF/qualification/plane_fixed_axis_guard_repair_cube64_96_qual600_20261116_v38/build/cube_lfm_contiguous_plane_packing",
+  "binary_sha256": "49ee0d65f0ce1d2127fd5ea96eac3c085903af3ae5249060e9dbacd7b837d527",
+  "input_root": "/public/home/binzheng/campaigns/lfm_cube_earth48_b1100_20261106_v1/boundary_domain_tests_20261107/CubeLFM-YY-IGRF/qualification/plane_fixed_axis_guard_repair_cube64_96_qual600_20261116_v38/case",
+  "inputs": {
+    "shell_geometry.txt": "59e14eea649dbaad3d6f00a24dee0e609da14f479ecf3a6e14578788bc2aff30",
+    "ionosphere_reference.txt": "997d05d321e27b63870725413147557f8a8691a8988490b25c7376a1f3435a5f",
+    "imf_driver.txt": "e4ef5c1c991bcb6477de364355b98c7dcd896d1d4694e75941e65147cd597ce5"
+  },
+  "forecast_output_bytes": 15000000000,
+  "forecast_is_cap": false,
+  "case_fingerprint": "06c723c9d333cc6fafcb76cfe4790f96c18b1a09856948ebde1c5fc03a5cffbe"
+}
