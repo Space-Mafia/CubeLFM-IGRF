@@ -27,14 +27,17 @@ ulimit -s unlimited
 
 repo=${1:?Pass the absolute path of the public checkout}
 raw_csv=${2:-}
+seconds=${3:-120}
 export OMPI_CC=gcc OMPI_FC=gfortran
 export MKLROOT=/public/software/compiler/intel/onepai/2021.3.0/mkl/2021.3.0
 export HDF5_ROOT=/public/software/apps/anaconda3/2023.09
 export CUBELFM_MPI_LAUNCH="mpirun --mca plm slurm --mca pml cm --mca mtl ofi --mca mtl_ofi_provider_include psm2 --mca oob_tcp_if_include ib0 --nooversubscribe --map-by ppr:12:numa --bind-to core"
 python="$HDF5_ROOT/bin/python3"
-args=()
-if [[ -n "$raw_csv" ]]; then args+=(--raw-csv "$raw_csv"); fi
-"$python" "$repo/event128/prepare_inputs.py" inputs "${args[@]}"
+if [[ -n "$raw_csv" ]]; then
+  "$python" "$repo/event128/prepare_inputs.py" inputs --raw-csv "$raw_csv"
+else
+  "$python" "$repo/event128/prepare_inputs.py" inputs
+fi
 "$python" "$repo/event128/build.py" build --jobs 12
-"$python" "$repo/event128/run_clean.py" build inputs case --seconds 120
-"$python" "$repo/event128/check_smoke.py" case | tee smoke-result.json
+"$python" "$repo/event128/run_clean.py" build inputs case --seconds "$seconds"
+"$python" "$repo/event128/check_smoke.py" case | tee endpoint-result.json

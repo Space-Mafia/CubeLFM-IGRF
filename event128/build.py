@@ -1,5 +1,6 @@
 """Build the 23 October 2002 event using source files from this checkout."""
 import argparse
+import fcntl
 import hashlib
 import json
 import os
@@ -20,16 +21,15 @@ WRAPS = (
 )
 
 
-def run_build(out, jobs, environment):
+def run_build(out, jobs, environment, objects_only=False):
     manifest = json.loads((HERE / 'native/units.json').read_text())
     mkl = Path(environment['MKLROOT']).resolve()
     hdf5 = Path(environment['HDF5_ROOT']).resolve()
     mpicc, mpifc = (environment.get(k, default) for k, default in
                      [('MPICC', 'mpicc'), ('MPIFC', 'mpifort')])
     units = manifest['units']
-    out.mkdir(parents=True)
-    (out / 'modules').mkdir()
-    rules = ['.DELETE_ON_ERROR:', '.PHONY: all', 'all: cube_event128', '']
+    (out / 'modules').mkdir(exist_ok=True)
+    rules = ['.DELETE_ON_ERROR:', '.PHONY: all objects', 'all: cube_event128', '']
     archives = {}
     objects = {}
     providers = {}
@@ -39,14 +39,18 @@ def run_build(out, jobs, environment):
         if key in objects:
             raise ValueError(f'Duplicate object {key}')
         unit_dir = out / 'units' / unit['group'] / key[:-2]
-        unit_dir.mkdir(parents=True)
+        unit_dir.mkdir(parents=True, exist_ok=True)
         source = REPO / unit['source']
         local = unit_dir / source.name
-        local.symlink_to(source)
+        if not local.is_symlink() or local.resolve() != source:
+            local.unlink(missing_ok=True)
+            local.symlink_to(source)
         for name, relative in unit['headers'].items():
             dest = unit_dir / name
             dest.parent.mkdir(parents=True, exist_ok=True)
-            dest.symlink_to(REPO / relative)
+            if not dest.is_symlink() or dest.resolve() != REPO / relative:
+                dest.unlink(missing_ok=True)
+                dest.symlink_to(REPO / relative)
         obj = str((unit_dir / key).relative_to(out))
         objects[key] = obj
         sources[key] = local
@@ -69,7 +73,9 @@ def run_build(out, jobs, environment):
         if not c:
             command += ['-Jmodules', '-Imodules']
         command += ['-c', str(source.relative_to(out)), '-o', objects[key]]
-        rules += [objects[key]+': '+' '.join(dependencies), '\t'+shlex.join(command), '']
+        source_files = [source.relative_to(out), *[(source.parent / n).relative_to(out) for n in unit['headers']]]
+        prerequisites = ['Makefile', *map(str, source_files), *dependencies]
+        rules += [objects[key]+': '+' '.join(prerequisites), '\t'+shlex.join(command), '']
 
     libs = []
     for group, members in archives.items():
@@ -88,8 +94,15 @@ def run_build(out, jobs, environment):
                '-L'+str(mkl_lib),'-Wl,-rpath,'+str(mkl_lib),'-lmkl_rt','-ldl',
                '-fopenmp','-lm','-Wl,-Map,model.map','-o','cube_event128']
     rules += ['cube_event128: '+' '.join(explicit+libs), '\t'+shlex.join(command)]
-    (out/'Makefile').write_text('\n'.join(rules)+'\n')
-    subprocess.run(['make','-j',str(jobs),'all'], cwd=out, check=True)
+    rules.append('objects: '+' '.join(objects.values()))
+    makefile = out/'Makefile'
+    content = '\n'.join(rules)+'\n'
+    if not makefile.exists() or makefile.read_text()!=content:
+        makefile.write_text(content)
+    subprocess.run(['make','-j',str(jobs),'objects' if objects_only else 'all'], cwd=out, check=True)
+    if objects_only:
+        print(f'Compiled all {len(units)} translation units.', flush=True)
+        return
     executable = out/'cube_event128'
     print(f'Built {executable} from {len(units)} source files. '
           f'SHA-256 {hashlib.sha256(executable.read_bytes()).hexdigest()}', flush=True)
@@ -97,9 +110,15 @@ def run_build(out, jobs, environment):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('directory', type=Path, help='new build directory')
+    parser.add_argument('directory', type=Path, help='build directory for this checkout and toolchain')
     parser.add_argument('--jobs', type=int, default=8)
+    parser.add_argument('--objects-only', action='store_true',
+                        help='compile without linking, for a split build and model allocation')
     args = parser.parse_args()
     if args.jobs < 1:
         parser.error('--jobs must be positive')
-    run_build(args.directory.resolve(), args.jobs, os.environ)
+    directory = args.directory.resolve()
+    directory.mkdir(parents=True, exist_ok=True)
+    with (directory/'.make.lock').open('a') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        run_build(directory, args.jobs, os.environ, args.objects_only)

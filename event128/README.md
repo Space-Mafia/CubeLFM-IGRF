@@ -45,7 +45,7 @@ reference=/absolute/path/to/event20021023_native128_192_aurora12h_20261120_v2
 run_dir=/your/scratch/cubelfm-event-20021023-v030
 mkdir "$run_dir" && cd "$run_dir" || exit 1
 sbatch --account=YOUR_ACCOUNT --partition=YOUR_PARTITION \
-  "$repo/event128/run.sbatch" "$repo" "$reference"
+  "$repo/event128/historical_run.sbatch" "$repo" "$reference"
 ```
 
 The run directory receives the build, process logs, receipts and compact HDF5 outputs under `event12h/`. Each frame's `global_mi` group stores `potential_V`, `outward_fac_A_m2`, `pedersen_S` and `hall_S` on the geographic grid. Use the held MI clock when matching an MHD frame to its ionospheric state. The duplicated residual in the cap-oriented diagnostics refers to one global solve. [Output schema implementation](runtime/archive_global.py)

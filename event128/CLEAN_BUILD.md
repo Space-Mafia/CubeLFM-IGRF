@@ -41,7 +41,7 @@ sbatch --account=YOUR_ACCOUNT --partition=YOUR_PARTITION \
   "$repo/event128/smoke.sbatch" "$repo" "$raw"
 ```
 
-The job converts the driver, builds and links the model from source, and cold-starts on two nodes with 96 ranks per node and one thread per rank. It advances 120 simulated seconds to **04:02 UT**. The normal 120 s frame interval reaches its first output and the model writes its endpoint checkpoint. A successful test writes `smoke-result.json` with the actual step count, final time step, MI clock, global residual and full MHD process wall time.
+The job converts the driver, builds and links the model from source, and cold-starts on two nodes with 96 ranks per node and one thread per rank. It advances 120 simulated seconds to **04:02 UT**. The normal 120 s frame interval reaches its first output and the model writes its endpoint checkpoint. A successful test writes `endpoint-result.json` with the actual step count, final time step, MI clock, global residual and full MHD process wall time.
 
 ## Build or run the stages separately
 
@@ -54,6 +54,6 @@ python3 "$repo/event128/run_clean.py" build inputs case --seconds 120
 python3 "$repo/event128/check_smoke.py" case
 ```
 
-For the original 04:00–16:00 UT interval, request enough allocation time and use `--seconds 43200` with a new output directory. `CUBELFM_MPI_LAUNCH` can supply your site's MPI launch options. The runner appends `-np 192` and the model arguments. The smoke-test batch script sets the qualified Sugon MPI options.
+For a full 12-hour cold start on Sugon, substitute `event128/run.sbatch` for `event128/smoke.sbatch` in the submission command. Both scripts take the checkout and optional NASA CSV as arguments. For a manual run of this interval, request enough allocation time and use `--seconds 43200` with a new output directory. `CUBELFM_MPI_LAUNCH` can supply your site's MPI launch options. The runner appends `-np 192` and the model arguments. The smoke-test batch script sets the qualified Sugon MPI options.
 
 The source inventory and per-unit compile profiles are in [native/units.json](native/units.json). `build.py` creates the Fortran modules and static libraries inside the new build tree. The HDF5 files in `case/` include both the 192 MHD tiles and the global ionosphere fields. The source-only historical check remains available as `python3 event128/verify.py`.
