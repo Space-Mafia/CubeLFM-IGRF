@@ -2,6 +2,8 @@
 
 This workflow starts the 23 October 2002 event at 04:00 UT. It builds all 114 C and Fortran translation units in a new directory, including the 53 members selected from nine native archives in the reference link. It uses the original 128 × 48 × 48 × 6 mesh, native seam, corrected CT induction reference and global PARDISO ionospheric solver. All project source, project headers, dated IGRF tables and the two fixed geometry files are in the checkout.
 
+The clean Sugon build compiled all 114 sources and linked the model. The 192-rank runtime test is queued. The archived 12-hour performance figure belongs to the original event run.
+
 ## Requirements
 
 | Dependency | What the build or run uses |

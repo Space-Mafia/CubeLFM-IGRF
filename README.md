@@ -9,7 +9,7 @@ The [clean-build guide](event128/CLEAN_BUILD.md) covers compiler, MPI, MKL and H
 ## Download and test
 
 ```sh
-git clone --branch student-clean-build https://github.com/Space-Mafia/CubeLFM-IGRF.git
+git clone https://github.com/Space-Mafia/CubeLFM-IGRF.git
 cd CubeLFM-IGRF
 python3 event128/verify.py
 ```

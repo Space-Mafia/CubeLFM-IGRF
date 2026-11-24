@@ -99,7 +99,7 @@ def run_build(out, jobs, environment, objects_only=False):
     content = '\n'.join(rules)+'\n'
     if not makefile.exists() or makefile.read_text()!=content:
         makefile.write_text(content)
-    subprocess.run(['make','-j',str(jobs),'objects' if objects_only else 'all'], cwd=out, check=True)
+    subprocess.run(['make','-r','-j',str(jobs),'objects' if objects_only else 'all'], cwd=out, check=True)
     if objects_only:
         print(f'Compiled all {len(units)} translation units.', flush=True)
         return
