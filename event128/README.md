@@ -25,7 +25,9 @@ From the repository root, run `python3 event128/verify.py` with Python 3.9 or ne
 
 `compiled/` is the byte-exact reading copy of the 14 compiled units. The batch build generates these units from `reference-source/`, `ports/` and `cubesphere/io/`. For development, edit the generating source. The historical comparison in `verify.py` will identify the units affected by an edit.
 
-## Run on the reference Sugon installation
+## Historical site launcher in v0.3.0
+
+For a new installation use the [clean source build and 192-core smoke test](CLEAN_BUILD.md). The commands below describe how the original packaging used a completed site baseline.
 
 Use the completed native two-cap **128-grid baseline** named `event20021023_native128_192_aurora12h_20261120_v2` from the same site installation. Its directory supplies the successful MPI launch layout, shared object/library paths and three inputs. The event starts from the cold initial condition. The launcher compiles the event sources on the allocation, links the 128-grid executable and starts it with the original MPI and input arguments.
 
@@ -50,6 +52,6 @@ The run directory receives the build, process logs, receipts and compact HDF5 ou
 
 ## Reference result and scope
 
-Sugon job **29545636** exited successfully after 495,712 steps. Its last frame-step record reached 43,200 s and its last MI update index was 4,321. The full MHD process took 87,718.14473083615 s, including initialization, output and exit, giving **0.4924864762× real time**. Compilation time is separate. The SHA-256 of the executed binary is `606770c02d172da36f2f34905aa7d2be926932e0cbf5d250cb5a7f5638181678`. This measurement belongs to the archived Sugon run. The public packaging was tested by regenerating its inputs. A new portable clean build and an independent full event replay remain unqualified.
+Sugon job **29545636** exited successfully after 495,712 steps. Its last frame-step record reached 43,200 s and its last MI update index was 4,321. The full MHD process took 87,718.14473083615 s, including initialization, output and exit, giving **0.4924864762× real time**. Compilation time is separate. The SHA-256 of the executed binary is `606770c02d172da36f2f34905aa7d2be926932e0cbf5d250cb5a7f5638181678`. This measurement belongs to the archived Sugon run. The public packaging was tested by regenerating its inputs. The 12-hour measurement applies to the historical build. The scope of the separate clean-build test is described in [the installation guide](CLEAN_BUILD.md).
 
-[BUILD.json](BUILD.json) identifies all 61 explicitly linked object sources and nine native archives. Further archive members, proprietary toolchains, native binaries, input HDF5 and event output are site dependencies or external data. The repository includes the event-specific IGRF, orientation and geomagnetic lookup headers. The full-sphere solver sources derive from the Yin–Yang GAMERA global tensor implementation; the event uses the sparse direct path and its residual check. [Solver sources](ports/yinyang_igrf/events/20021023/global_mi/yyg) · [Inherited notices](../provenance/THIRD_PARTY_NOTICES.txt)
+[BUILD.json](BUILD.json) identifies all 61 explicitly linked object sources and nine native archives. The clean build supplies the 53 archive member sources selected at link time and the two fixed geometry inputs. Intel MKL, MPI and HDF5 are external dependencies. The solar wind is regenerated from NASA OMNI. The repository includes the event-specific IGRF, orientation and geomagnetic lookup headers. The full-sphere solver sources derive from the Yin–Yang GAMERA global tensor implementation; the event uses the sparse direct path and its residual check. [Solver sources](ports/yinyang_igrf/events/20021023/global_mi/yyg) · [Inherited notices](../provenance/THIRD_PARTY_NOTICES.txt)

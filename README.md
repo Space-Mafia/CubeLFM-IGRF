@@ -2,6 +2,10 @@
 
 **v0.3.0** publishes the 128 × 48 × 48 × 6 Earth magnetosphere event of **23 October 2002**. The model cold-started at 04:00 UT and reached 16:00 UT on 192 physical cores. It uses the native LFM-Cube panel seam, the corrected magnetic-induction reference, and the Yin–Yang GAMERA global ionospheric potential solver with a branch-local return to the MHD inner boundary.
 
+## Build the 128-grid event
+
+The [clean-build guide](event128/CLEAN_BUILD.md) covers compiler, MPI, MKL and HDF5 dependencies, NASA OMNI input preparation, and a 192-core test that advances the first two physical minutes. The two fixed geometry files ship with the code. The clean entry point is `event128/smoke.sbatch`.
+
 ## Download and test
 
 ```sh
@@ -12,7 +16,7 @@ python3 event128/verify.py
 
 This offline test uses Python 3.9 or newer and the standard library. It regenerates all 14 C and Fortran inputs compiled for the event, compares them byte for byte by SHA-256 with the Sugon build records, verifies source mappings for 47 inherited objects, and reproduces the two compact-output writers. It takes no cluster time.
 
-To inspect the actual MHD or MI update, start with the [compiled event source](event128/compiled). To build and run on the reference Sugon installation, follow the [event guide](event128/README.md). A full simulation requires the native LFM/GAMERA libraries and modules, MPI, Intel MKL and the dated input files. The public checkout alone supports the offline test. A clean build from public dependencies alone has yet to be demonstrated.
+To inspect the actual MHD or MI update, start with the [compiled event source](event128/compiled). The [event guide](event128/README.md) describes the scientific configuration and archived 12-hour result. The [clean-build guide](event128/CLEAN_BUILD.md) describes the source build and the short coupled test.
 
 ## Reference performance
 
