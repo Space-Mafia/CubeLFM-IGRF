@@ -1,0 +1,91 @@
+{
+  "grid": [
+    128,
+    48,
+    48,
+    6
+  ],
+  "layout": [
+    8,
+    2,
+    2
+  ],
+  "local_cells": [
+    16,
+    24,
+    24
+  ],
+  "MPI": 192,
+  "nodes": 2,
+  "cores_per_node": 96,
+  "openmp": 1,
+  "event_model": {
+    "cgm_table_sha256": "cf5b18cd9b6deed99802a7b6fbae62fd427b58e3d80960b19d97eeaf0b6993be",
+    "coeff_header_sha256": "405eafb60c5ec795bbd7b7df16d54c3ca1ccaedc3878ba9e44332d1380a9b54b",
+    "degree": 5,
+    "dipole_axis_body": [
+      0.05636483251631488,
+      -0.17043949114746462,
+      0.9837547384957295
+    ],
+    "frame": "+Z spin; -X initial projected Sun; right-handed Y=Z cross X",
+    "geometry_limit": "Sun fixed at start; solar RA/declination drift during run omitted; UTC approximates UT1",
+    "gmst_rad": 1.5953403215393664,
+    "igrf14_asset_sha256": "8f8d88403028fc4ee92c4f38d97b46e0a87e2cfc496045b43c9e26c1d6b0903c",
+    "initial_rotation_phase_rad": 1.1153135287624503,
+    "interpolation": {
+      "fraction": 0.5616675789089582,
+      "lower_epoch": 2000,
+      "method": "linear IGRF interpolation",
+      "upper_epoch": 2005
+    },
+    "obliquity_rad": 0.4091011783315078,
+    "orientation_header_sha256": "cd69d9bf82b10e221fbd48075b800a304a37d14e19d824fdc1b972ed07a466ff",
+    "solar_declination_rad": -0.19760773571757675,
+    "solar_right_ascension_rad": 3.6216194463667093,
+    "start_utc": "2002-10-23T04:00:00Z",
+    "sunward_direction_model": [
+      -0.9805390425079062,
+      0.0,
+      -0.19632418627789683
+    ]
+  },
+  "conductance": "same coupled YYG event EUV/precipitation/DPB feedback",
+  "wind_sha256": "648f5617213fa2dc9f52edba5f0830bf55e720872c948f6630ea994051700c43",
+  "natural_mi_s": 10,
+  "mi_step_clip": false,
+  "CFL": 0.3,
+  "BDIFFUSE_coefficient": 0.5,
+  "Boris_km_s": 1100,
+  "start_utc": "2002-10-23T04:00:00Z",
+  "stop_utc": "2002-10-23T16:00:00Z",
+  "output_s": 120,
+  "checkpoint_s": 3600,
+  "driver_padding_min": 160,
+  "inputs": {
+    "omni_extended.h5": "648f5617213fa2dc9f52edba5f0830bf55e720872c948f6630ea994051700c43",
+    "ionosphere_reference.txt": "8e4cae00a08887213c06459eb426dac75d652dd528dbff1ee2f72d7b03e1563d",
+    "shell_geometry.txt": "59e14eea649dbaad3d6f00a24dee0e609da14f479ecf3a6e14578788bc2aff30"
+  },
+  "solver": "YYG global PARDISO",
+  "grid_mi": [
+    192,
+    97
+  ],
+  "relative_tolerance": 1e-10,
+  "absolute_tolerance": 1e-08,
+  "wall": "branch-local-electrostatic",
+  "executable_sha256": "606770c02d172da36f2f34905aa7d2be926932e0cbf5d250cb5a7f5638181678",
+  "start": "cold",
+  "seam": "native LFM-Cube",
+  "induction_reference": "corrected",
+  "physical_result": {
+    "seconds": 43200,
+    "full_wait_s": 87718.14473083615,
+    "rt": 0.49248647623088193,
+    "data_job": "29545636",
+    "step": 495712
+  },
+  "process_exit": 0,
+  "last_natural_mi_index": 4321
+}
