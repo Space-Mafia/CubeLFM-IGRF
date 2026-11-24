@@ -15,6 +15,8 @@ This workflow starts the 23 October 2002 event at 04:00 UT. It builds all 114 C 
 
 On a cluster, load the site modules or ask the administrator for their installation prefixes. The Sugon batch script supplies the paths there. On another system, set `MPICC` and `MPIFC` if your GNU-backed MPI wrappers use different names. The two-node run needs 192 MPI ranks. Each rank handles 16 × 24 × 24 cells on one panel.
 
+On a new Python installation, install the two Python packages with `python3 -m pip install numpy h5py`. On Sugon the batch script uses the site Python that already provides them.
+
 ## Event inputs
 
 The two text files in `event128/inputs/geometry/` are the exact inputs from the reference run. `shell_geometry.txt` defines the mapped mesh and `ionosphere_reference.txt` supplies the native ionospheric reference. Their SHA-256 values are listed in [CASE.json](CASE.json). The degree-five IGRF coefficients, start phase, spin and coordinate lookup tables are already dated for the event.
@@ -27,6 +29,8 @@ For a compute node without Internet access, download the CSV on an Internet-conn
 curl --fail --location --retry 2 --output nasa-omni.csv \
   'https://cdaweb.gsfc.nasa.gov/hapi/data?id=OMNI_HRO2_1MIN&parameters=BX_GSE%2CBY_GSM%2CBZ_GSM%2CVx%2CVy%2CVz%2Cproton_density%2CT&time.min=2002-10-23T01%3A09%3A00Z&time.max=2002-10-23T18%3A52%3A00Z&format=csv'
 ```
+
+The reference NASA CSV has SHA-256 `8dade9d352636cd1e694a6fa3c6f9732f858c1a745feec7a851a823df4ee542c`. Check a download with `sha256sum nasa-omni.csv`. A changed digest can indicate a revised OMNI record.
 
 ## Submit the short test on Sugon
 

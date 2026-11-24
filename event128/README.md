@@ -23,7 +23,7 @@ The ionosphere uses one geographic potential on the sphere. The solver removes t
 
 From the repository root, run `python3 event128/verify.py` with Python 3.9 or newer. The test materializes the source from the dated baseline in a temporary directory, selects the induction correction and branch-local wall, and prepares the main driver and output writers. It checks the resulting files against the executed build. A successful run prints the counts of 14 compiler inputs, 47 inherited source mappings and two writers.
 
-`compiled/` is the byte-exact reading copy of the 14 compiled units. The batch build generates these units from `reference-source/`, `ports/` and `cubesphere/io/`. For development, edit the generating source. The historical comparison in `verify.py` will identify the units affected by an edit.
+`compiled/` is the byte-exact reading copy of the 14 compiled units. The clean build compiles the files listed in [native/units.json](native/units.json) directly. The offline source test regenerates the event-specific files from `reference-source/`, `ports/` and `cubesphere/io/` to check them against the published baseline.
 
 ## Historical site launcher in v0.3.0
 
