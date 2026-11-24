@@ -1,0 +1,2 @@
+      INTEGER MX,MY
+      PARAMETER (MX=97,MY=67)

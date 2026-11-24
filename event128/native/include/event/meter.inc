@@ -1,0 +1,15 @@
+C Minimal Gate 1 BFIELD axis-fix contract.  Values are supplied explicitly
+C by the test driver; no production initialization is inferred here.
+      INTEGER NK2, NK4, NI_BIN, NJ_BIN
+      INTEGER NRINGS, NAVER(500)
+      REAL AXFIX
+      REAL PHI(NKP1), COSPHI(NKP1), SINPHI(NKP1)
+      REAL CPHIQM(NK), SPHIQM(NK), DARC(NK), COSARC(NK)
+      COMMON /LFM_RESCUE_METER_I/ NK2, NK4, NI_BIN, NJ_BIN
+      COMMON /LFM_RESCUE_METER_R/ AXFIX
+      COMMON /LFM_RESCUE_RINGS_I/ NRINGS, NAVER
+      COMMON /LFM_RESCUE_METER_PHI/ PHI, COSPHI, SINPHI,
+     $ CPHIQM, SPHIQM, DARC, COSARC
+      SAVE /LFM_RESCUE_METER_I/, /LFM_RESCUE_METER_R/
+      SAVE /LFM_RESCUE_RINGS_I/
+      SAVE /LFM_RESCUE_METER_PHI/

@@ -1,0 +1,1436 @@
+{
+  "profiles": [
+    [
+      "-DLFM_CUBE_BORIS_C_KM_S=1100",
+      "-DLFM_CUBE_NATIVE_MI",
+      "-O3",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-fcheck=all,no-bounds",
+      "-pthread"
+    ],
+    [
+      "-O3",
+      "-cpp",
+      "-ffixed-line-length-none",
+      "-std=legacy",
+      "-fno-align-commons",
+      "-fdefault-real-8",
+      "-fdefault-double-8",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-fcheck=all,no-bounds"
+    ],
+    [
+      "-O3",
+      "-Wall",
+      "-Wextra",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-fcheck=all,no-bounds",
+      "-pthread"
+    ],
+    [
+      "-O3",
+      "-cpp",
+      "-ffixed-line-length-none",
+      "-std=legacy",
+      "-fdefault-real-8",
+      "-fdefault-double-8",
+      "-fno-align-commons",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-fcheck=all,no-bounds"
+    ],
+    [
+      "-DSMOOTHION",
+      "-DY2INTERP",
+      "-O3",
+      "-cpp",
+      "-ffixed-line-length-none",
+      "-std=legacy",
+      "-fno-align-commons",
+      "-fallow-argument-mismatch",
+      "-fdefault-real-8",
+      "-fdefault-double-8",
+      "-Wall",
+      "-Wextra",
+      "-Wimplicit-interface",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-finit-real=snan",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-ffixed-form"
+    ],
+    [
+      "-O3"
+    ],
+    [
+      "-O2",
+      "-O3",
+      "-march=native",
+      "-mtune=native",
+      "-ffast-math",
+      "-ftree-vectorize",
+      "-fomit-frame-pointer",
+      "-fopenmp",
+      "-O3",
+      "-DNDEBUG",
+      "-std=gnu99",
+      "-fno-fast-math",
+      "-fopenmp"
+    ],
+    [
+      "-O3",
+      "-mavx2",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    [
+      "-O3",
+      "-cpp",
+      "-ffixed-line-length-none",
+      "-std=legacy",
+      "-fno-align-commons",
+      "-fdefault-real-8",
+      "-fdefault-double-8",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-fcheck=all,no-bounds",
+      "-mavx2"
+    ],
+    [
+      "-O3",
+      "-std=gnu11",
+      "-pthread",
+      "-fPIC",
+      "-ffp-contract=off",
+      "-fno-fast-math",
+      "-DGAMERA_EVENT_IGRF"
+    ],
+    [
+      "-O3",
+      "-std=c11",
+      "-fno-fast-math"
+    ],
+    [
+      "-O3",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow"
+    ],
+    [
+      "-O3",
+      "-cpp",
+      "-ffixed-line-length-none",
+      "-std=legacy",
+      "-fdefault-real-8",
+      "-fdefault-double-8",
+      "-fno-align-commons",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow"
+    ],
+    [
+      "-O3",
+      "-std=c11",
+      "-fno-fast-math",
+      "-Dgamera_mi_compose_ghost_velocity=cube_yy_wall_compose_ghost_velocity"
+    ],
+    [
+      "-O3",
+      "-std=c11",
+      "-fno-fast-math",
+      "-Wall",
+      "-Wextra"
+    ],
+    [
+      "-O3",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-pthread"
+    ],
+    [
+      "-O3",
+      "-std=c11",
+      "-fno-fast-math",
+      "-Wall",
+      "-Wextra",
+      "-pthread"
+    ],
+    [
+      "-O3",
+      "-fno-fast-math",
+      "-fopenmp",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    [
+      "-O3",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-Warray-temporaries"
+    ],
+    [
+      "-O3",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-pthread",
+      "-Warray-temporaries"
+    ],
+    [
+      "-O3",
+      "-cpp",
+      "-ffree-line-length-none",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-fcheck=all,no-bounds",
+      "-pthread",
+      "-DLFM_CUBE_NATIVE_MI",
+      "-DLFM_CUBE_BORIS_C_KM_S=1100",
+      "-mavx2",
+      "-mtune=znver2",
+      "-ffp-contract=off",
+      "-fno-fast-math"
+    ],
+    [
+      "-O3",
+      "-ffree-line-length-none",
+      "-fcheck=all",
+      "-ffpe-trap=invalid,zero,overflow"
+    ],
+    [
+      "-O3",
+      "-ffree-line-length-none",
+      "-ffixed-line-length-none",
+      "-fcheck=all",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-cpp"
+    ],
+    [
+      "-O3",
+      "-cpp",
+      "-ffixed-line-length-none",
+      "-std=legacy",
+      "-fdefault-real-8",
+      "-fdefault-double-8",
+      "-fno-align-commons",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-fcheck=all,no-bounds",
+      "-cpp"
+    ],
+    [
+      "-O3",
+      "-std=c11",
+      "-Wall",
+      "-Wextra"
+    ],
+    [
+      "-O3",
+      "-ffree-line-length-none",
+      "-fcheck=all",
+      "-ffpe-trap=invalid,zero,overflow",
+      "-cpp"
+    ],
+    [
+      "-O3",
+      "-fcheck=all",
+      "-ffpe-trap=invalid,zero,overflow"
+    ],
+    [
+      "-O3",
+      "-ffree-line-length-none",
+      "-fcheck=all",
+      "-fbacktrace",
+      "-ffpe-trap=invalid,zero,overflow"
+    ],
+    [
+      "-O3",
+      "-std=c11",
+      "-fno-fast-math",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    [
+      "-O3",
+      "-std=c11",
+      "-mavx2",
+      "-ffp-contract=off",
+      "-fno-fast-math",
+      "-Wall",
+      "-Wextra"
+    ],
+    [
+      "-O3",
+      "-std=c11",
+      "-mavx2",
+      "-mtune=znver2",
+      "-ffp-contract=off",
+      "-fno-fast-math",
+      "-Wall",
+      "-Wextra"
+    ],
+    [
+      "-std=c11",
+      "-D_DEFAULT_SOURCE",
+      "-O2",
+      "-fno-fast-math",
+      "-fPIC"
+    ],
+    [
+      "-O3",
+      "-std=gnu11",
+      "-fPIC",
+      "-fno-fast-math",
+      "-DGAMERA_MI_SPARSE_DIRECT"
+    ],
+    [
+      "-O3",
+      "-std=gnu11",
+      "-fPIC",
+      "-fno-fast-math",
+      "-DGAMERA_MI_SPARSE_DIRECT",
+      "-fopenmp"
+    ]
+  ],
+  "units": [
+    {
+      "group": "lfm_cube_evolution",
+      "object": "lfm_cube_native_geometry.f90.o",
+      "source": "event128/native/lfm_cube_evolution/lfm_cube_native_geometry.f90",
+      "profile": 0,
+      "headers": {}
+    },
+    {
+      "group": "cube_bzz_oracle",
+      "object": "lfm_cube_native_storage.f90.o",
+      "source": "event128/native/cube_bzz_oracle/lfm_cube_native_storage.f90",
+      "profile": 1,
+      "headers": {}
+    },
+    {
+      "group": "cube_bzz_oracle",
+      "object": "native_ave2flux.F.o",
+      "source": "event128/native/cube_bzz_oracle/native_ave2flux.F",
+      "profile": 1,
+      "headers": {
+        "global_dims.inc": "event128/native/include/cube_bzz_oracle/global_dims.inc",
+        "mhd_P++_pointers.inc": "event128/native/include/cube_bzz_oracle/mhd_P++_pointers.inc",
+        "fortran_P++_arrays.inc": "event128/native/include/cube_bzz_oracle/fortran_P++_arrays.inc",
+        "param.inc": "event128/native/include/cube_bzz_oracle/param.inc"
+      }
+    },
+    {
+      "group": "cube_bzz_oracle",
+      "object": "native_flux2ave.F.o",
+      "source": "event128/native/cube_bzz_oracle/native_flux2ave.F",
+      "profile": 1,
+      "headers": {
+        "global_dims.inc": "event128/native/include/cube_bzz_oracle/global_dims.inc",
+        "mhd_P++_pointers.inc": "event128/native/include/cube_bzz_oracle/mhd_P++_pointers.inc",
+        "fortran_P++_arrays.inc": "event128/native/include/cube_bzz_oracle/fortran_P++_arrays.inc",
+        "param.inc": "event128/native/include/cube_bzz_oracle/param.inc"
+      }
+    },
+    {
+      "group": "cube_bzz_oracle",
+      "object": "native_flux_fix.F.o",
+      "source": "event128/native/cube_bzz_oracle/native_flux_fix.F",
+      "profile": 1,
+      "headers": {
+        "global_dims.inc": "event128/native/include/cube_bzz_oracle/global_dims.inc",
+        "mhd_P++_pointers.inc": "event128/native/include/cube_bzz_oracle/mhd_P++_pointers.inc",
+        "fortran_P++_arrays.inc": "event128/native/include/cube_bzz_oracle/fortran_P++_arrays.inc",
+        "param.inc": "event128/native/include/cube_bzz_oracle/param.inc",
+        "help.inc": "event128/native/include/cube_bzz_oracle/help.inc",
+        "var.inc": "event128/native/include/cube_bzz_oracle/var.inc",
+        "bzero.inc": "event128/native/include/cube_bzz_oracle/bzero.inc",
+        "b_dbl.inc": "event128/native/include/cube_bzz_oracle/b_dbl.inc"
+      }
+    },
+    {
+      "group": "cube_bzz_oracle",
+      "object": "original_bzz.F.o",
+      "source": "event128/native/cube_bzz_oracle/original_bzz.F",
+      "profile": 1,
+      "headers": {
+        "global_dims.inc": "event128/native/include/cube_bzz_oracle/global_dims.inc",
+        "mhd_P++_pointers.inc": "event128/native/include/cube_bzz_oracle/mhd_P++_pointers.inc",
+        "fortran_P++_arrays.inc": "event128/native/include/cube_bzz_oracle/fortran_P++_arrays.inc",
+        "param.inc": "event128/native/include/cube_bzz_oracle/param.inc"
+      }
+    },
+    {
+      "group": "cube_bzz_oracle",
+      "object": "original_fcourant.F.o",
+      "source": "event128/native/cube_bzz_oracle/original_fcourant.F",
+      "profile": 1,
+      "headers": {
+        "global_dims.inc": "event128/native/include/cube_bzz_oracle/global_dims.inc",
+        "mhd_P++_pointers.inc": "event128/native/include/cube_bzz_oracle/mhd_P++_pointers.inc",
+        "fortran_P++_arrays.inc": "event128/native/include/cube_bzz_oracle/fortran_P++_arrays.inc",
+        "param.inc": "event128/native/include/cube_bzz_oracle/param.inc",
+        "help.inc": "event128/native/include/cube_bzz_oracle/help.inc",
+        "bzero.inc": "event128/native/include/cube_bzz_oracle/bzero.inc",
+        "var2.inc": "event128/native/include/cube_bzz_oracle/var2.inc",
+        "twod.inc": "event128/native/include/cube_bzz_oracle/twod.inc",
+        "run-time.inc": "event128/native/include/cube_bzz_oracle/run-time.inc"
+      }
+    },
+    {
+      "group": "cube_bzz_oracle",
+      "object": "original_metric.F.o",
+      "source": "event128/native/cube_bzz_oracle/original_metric.F",
+      "profile": 1,
+      "headers": {
+        "global_dims.inc": "event128/native/include/cube_bzz_oracle/global_dims.inc",
+        "fortran_P++_arrays.inc": "event128/native/include/cube_bzz_oracle/fortran_P++_arrays.inc",
+        "mhd_P++_pointers.inc": "event128/native/include/cube_bzz_oracle/mhd_P++_pointers.inc",
+        "param.inc": "event128/native/include/cube_bzz_oracle/param.inc",
+        "help.inc": "event128/native/include/cube_bzz_oracle/help.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_contracts",
+      "object": "lfm_cube_mesh.f90.o",
+      "source": "event128/native/lfm_cube_contracts/lfm_cube_mesh.f90",
+      "profile": 2,
+      "headers": {}
+    },
+    {
+      "group": "lfm_cube_contracts",
+      "object": "lfm_cube_mpi.f90.o",
+      "source": "event128/native/lfm_cube_contracts/lfm_cube_mpi.f90",
+      "profile": 2,
+      "headers": {}
+    },
+    {
+      "group": "lfm_cube_contracts",
+      "object": "lfm_cube_shell_map.f90.o",
+      "source": "event128/native/lfm_cube_contracts/lfm_cube_shell_map.f90",
+      "profile": 2,
+      "headers": {}
+    },
+    {
+      "group": "lfm_cube_contracts",
+      "object": "lfm_cube_topology.f90.o",
+      "source": "event128/native/lfm_cube_contracts/lfm_cube_topology.f90",
+      "profile": 2,
+      "headers": {}
+    },
+    {
+      "group": "lfm_cube_native_mi",
+      "object": "LFM_SW_IONOSPHERE_CONFIGURE_PACKED.F.o",
+      "source": "event128/native/lfm_cube_native_mi/LFM_SW_IONOSPHERE_CONFIGURE_PACKED.F",
+      "profile": 3,
+      "headers": {
+        "lfm_sw_state.inc": "event128/native/include/lfm_cube_native_mi/lfm_sw_state.inc",
+        "ion_bridge_common.inc": "event128/native/include/lfm_cube_native_mi/ion_bridge_common.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_mi",
+      "object": "LFM_SW_MI_SNAPSHOT_PACK.F.o",
+      "source": "event128/native/lfm_cube_native_mi/LFM_SW_MI_SNAPSHOT_PACK.F",
+      "profile": 3,
+      "headers": {
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "iongeo.inc": "event128/native/include/lfm_cube_native_mi/iongeo.inc",
+        "ion_bridge_common.inc": "event128/native/include/lfm_cube_native_mi/ion_bridge_common.inc",
+        "lfm_sw_state.inc": "event128/native/include/lfm_cube_native_mi/lfm_sw_state.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_mi",
+      "object": "lfm_cube_native_mi.F.o",
+      "source": "event128/native/lfm_cube_native_mi/lfm_cube_native_mi.F",
+      "profile": 3,
+      "headers": {
+        "lfm_sw_state.inc": "event128/native/include/lfm_cube_native_mi/lfm_sw_state.inc",
+        "dipole.inc": "event128/native/include/lfm_cube_native_mi/dipole.inc",
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "ion_bridge_common.inc": "event128/native/include/lfm_cube_native_mi/ion_bridge_common.inc",
+        "volts.inc": "event128/native/include/lfm_cube_native_mi/volts.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "lfm_cube_background.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/lfm_cube_background.F",
+      "profile": 1,
+      "headers": {
+        "dipole.inc": "event128/native/include/lfm_cube_native_mi/dipole.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "lfm_legacy_scratch.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/lfm_legacy_scratch.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_bxqq0.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_bxqq0.F",
+      "profile": 1,
+      "headers": {
+        "dipole.inc": "event128/native/include/lfm_cube_native_mi/dipole.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_byqq0.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_byqq0.F",
+      "profile": 1,
+      "headers": {
+        "dipole.inc": "event128/native/include/lfm_cube_native_mi/dipole.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_bzqq0.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_bzqq0.F",
+      "profile": 1,
+      "headers": {
+        "dipole.inc": "event128/native/include/lfm_cube_native_mi/dipole.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_clip.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_clip.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_derco.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_derco.F",
+      "profile": 1,
+      "headers": {}
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_gint.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_gint.F",
+      "profile": 1,
+      "headers": {}
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_high.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_high.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_high2.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_high2.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "global_dims.inc": "event128/native/include/lfm_cube_native_hydro/global_dims.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_iclip.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_iclip.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_ipdm.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_ipdm.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc",
+        "run-time.inc": "event128/native/include/lfm_cube_native_hydro/run-time.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_jclip.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_jclip.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_jpdm.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_jpdm.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc",
+        "run-time.inc": "event128/native/include/lfm_cube_native_hydro/run-time.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_mijset.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_mijset.F",
+      "profile": 1,
+      "headers": {
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_pdm.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_pdm.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc",
+        "run-time.inc": "event128/native/include/lfm_cube_native_hydro/run-time.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_pdm2.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_pdm2.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc",
+        "run-time.inc": "event128/native/include/lfm_cube_native_hydro/run-time.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_xbhi.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_xbhi.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc"
+      }
+    },
+    {
+      "group": "lfm_cube_native_hydro",
+      "object": "native_ybhi.F.o",
+      "source": "event128/native/lfm_cube_native_hydro/native_ybhi.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "global_dims.inc": "event128/native/include/lfm_cube_native_hydro/global_dims.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc"
+      }
+    },
+    {
+      "group": "lfm_legacy_ionosphere_serial",
+      "object": "cross.F.o",
+      "source": "event128/native/lfm_legacy_ionosphere_serial/cross.F",
+      "profile": 4,
+      "headers": {}
+    },
+    {
+      "group": "lfm_legacy_ionosphere_serial",
+      "object": "curinterp.F.o",
+      "source": "event128/native/lfm_legacy_ionosphere_serial/curinterp.F",
+      "profile": 4,
+      "headers": {
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "ion_P++_pointers.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion_P++_pointers.inc",
+        "ion_fortran_P++_arrays.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion_fortran_P++_arrays.inc",
+        "iongeo.inc": "event128/native/include/lfm_cube_native_mi/iongeo.inc",
+        "curint.inc": "event128/native/include/lfm_legacy_ionosphere_serial/curint.inc",
+        "curint_y2.inc": "event128/native/include/lfm_legacy_ionosphere_serial/curint_y2.inc",
+        "global_dims.inc": "event128/native/include/lfm_cube_native_hydro/global_dims.inc"
+      }
+    },
+    {
+      "group": "lfm_legacy_ionosphere_serial",
+      "object": "ionosphere_checked.F.o",
+      "source": "event128/native/lfm_legacy_ionosphere_serial/ionosphere_checked.F",
+      "profile": 4,
+      "headers": {
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "boundx.inc": "event128/native/include/lfm_legacy_ionosphere_serial/boundx.inc",
+        "ion_P++_pointers.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion_P++_pointers.inc",
+        "ion_fortran_P++_arrays.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion_fortran_P++_arrays.inc",
+        "iongeo.inc": "event128/native/include/lfm_cube_native_mi/iongeo.inc",
+        "gcoef.inc": "event128/native/include/lfm_legacy_ionosphere_serial/gcoef.inc",
+        "ionconst.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ionconst.inc",
+        "curint.inc": "event128/native/include/lfm_legacy_ionosphere_serial/curint.inc",
+        "curint_y2.inc": "event128/native/include/lfm_legacy_ionosphere_serial/curint_y2.inc",
+        "volts.inc": "event128/native/include/lfm_cube_native_mi/volts.inc",
+        "ion-var.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion-var.inc",
+        "global_dims.inc": "event128/native/include/lfm_cube_native_hydro/global_dims.inc",
+        "jpara.inc": "event128/native/include/lfm_legacy_ionosphere_serial/jpara.inc",
+        "ion-meter.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion-meter.inc",
+        "ionC90.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ionC90.inc",
+        "run-time.inc": "event128/native/include/lfm_legacy_ionosphere_serial/run-time.inc"
+      }
+    },
+    {
+      "group": "lfm_legacy_ionosphere_serial",
+      "object": "lfm_mi_curl_capture.F.o",
+      "source": "event128/native/lfm_legacy_ionosphere_serial/lfm_mi_curl_capture.F",
+      "profile": 4,
+      "headers": {
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc"
+      }
+    },
+    {
+      "group": "lfm_legacy_ionosphere_serial",
+      "object": "lfm_mi_inner_table.F.o",
+      "source": "event128/native/lfm_legacy_ionosphere_serial/lfm_mi_inner_table.F",
+      "profile": 4,
+      "headers": {
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "volts.inc": "event128/native/include/lfm_cube_native_mi/volts.inc"
+      }
+    },
+    {
+      "group": "lfm_legacy_ionosphere_serial",
+      "object": "lfm_planet.F.o",
+      "source": "event128/native/lfm_legacy_ionosphere_serial/lfm_planet.F",
+      "profile": 4,
+      "headers": {
+        "planet.inc": "event128/native/include/lfm_legacy_ionosphere_serial/planet.inc",
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "iongeo.inc": "event128/native/include/lfm_cube_native_mi/iongeo.inc",
+        "volts.inc": "event128/native/include/lfm_cube_native_mi/volts.inc",
+        "ion_bridge_common.inc": "event128/native/include/lfm_cube_native_mi/ion_bridge_common.inc",
+        "prefill.inc": "event128/native/include/lfm_legacy_ionosphere_serial/prefill.inc"
+      }
+    },
+    {
+      "group": "lfm_legacy_ionosphere_serial",
+      "object": "subwts.F.o",
+      "source": "event128/native/lfm_legacy_ionosphere_serial/subwts.F",
+      "profile": 4,
+      "headers": {
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "ion_P++_pointers.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion_P++_pointers.inc",
+        "ion_fortran_P++_arrays.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion_fortran_P++_arrays.inc",
+        "iongeo.inc": "event128/native/include/lfm_cube_native_mi/iongeo.inc",
+        "volts.inc": "event128/native/include/lfm_cube_native_mi/volts.inc",
+        "dipole.inc": "event128/native/include/lfm_cube_native_mi/dipole.inc",
+        "ionconst.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ionconst.inc",
+        "gcoef.inc": "event128/native/include/lfm_legacy_ionosphere_serial/gcoef.inc"
+      }
+    },
+    {
+      "group": "lfm_legacy_ionosphere_serial",
+      "object": "z2code.F.o",
+      "source": "event128/native/lfm_legacy_ionosphere_serial/z2code.F",
+      "profile": 4,
+      "headers": {
+        "z2param.inc": "event128/native/include/lfm_legacy_ionosphere_serial/z2param.inc"
+      }
+    },
+    {
+      "group": "lfm_rotating_mi_geometry",
+      "object": "lfm_rotating_mi_geometry.F90.o",
+      "source": "event128/native/lfm_rotating_mi_geometry/lfm_rotating_mi_geometry.F90",
+      "profile": 5,
+      "headers": {}
+    },
+    {
+      "group": "lfm_rotating_mi_geometry",
+      "object": "lfm_rotating_mi_map.F90.o",
+      "source": "event128/native/lfm_rotating_mi_geometry/lfm_rotating_mi_map.F90",
+      "profile": 5,
+      "headers": {}
+    },
+    {
+      "group": "lfm_rotating_mi_geometry",
+      "object": "lfm_rotating_mi_state.F90.o",
+      "source": "event128/native/lfm_rotating_mi_geometry/lfm_rotating_mi_state.F90",
+      "profile": 5,
+      "headers": {}
+    },
+    {
+      "group": "lfm_tilt_geometry",
+      "object": "lfm_tilt_geometry.F90.o",
+      "source": "event128/native/lfm_tilt_geometry/lfm_tilt_geometry.F90",
+      "profile": 5,
+      "headers": {}
+    },
+    {
+      "group": "gamera_nonorthogonal_kernels",
+      "object": "nonorthogonal_geometry.c.o",
+      "source": "event128/native/gamera_nonorthogonal_kernels/nonorthogonal_geometry.c",
+      "profile": 6,
+      "headers": {
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h"
+      }
+    },
+    {
+      "group": "gamera_nonorthogonal_kernels",
+      "object": "nonorthogonal_grid.c.o",
+      "source": "event128/native/gamera_nonorthogonal_kernels/nonorthogonal_grid.c",
+      "profile": 6,
+      "headers": {
+        "nonorthogonal_grid.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_grid.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h"
+      }
+    },
+    {
+      "group": "gamera_nonorthogonal_kernels",
+      "object": "nonorthogonal_mi.c.o",
+      "source": "event128/native/gamera_nonorthogonal_kernels/nonorthogonal_mi.c",
+      "profile": 6,
+      "headers": {
+        "nonorthogonal_mi.h": "event128/ports/yinyang_igrf/events/20021023/global_mi/yyg/nonorthogonal_mi.h",
+        "nonorthogonal_grid.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_grid.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h",
+        "nonorthogonal_operators.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_operators.h"
+      }
+    },
+    {
+      "group": "gamera_nonorthogonal_kernels",
+      "object": "nonorthogonal_operators.c.o",
+      "source": "event128/native/gamera_nonorthogonal_kernels/nonorthogonal_operators.c",
+      "profile": 6,
+      "headers": {
+        "nonorthogonal_operators.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_operators.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h",
+        "nonorthogonal_reconstruction.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_reconstruction.h"
+      }
+    },
+    {
+      "group": "gamera_nonorthogonal_kernels",
+      "object": "nonorthogonal_reconstruction.c.o",
+      "source": "event128/native/gamera_nonorthogonal_kernels/nonorthogonal_reconstruction.c",
+      "profile": 6,
+      "headers": {
+        "nonorthogonal_reconstruction.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_reconstruction.h"
+      }
+    },
+    {
+      "group": "gamera_nonorthogonal_kernels",
+      "object": "nonorthogonal_state.c.o",
+      "source": "event128/native/gamera_nonorthogonal_kernels/nonorthogonal_state.c",
+      "profile": 6,
+      "headers": {
+        "nonorthogonal_state.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_state.h",
+        "nonorthogonal_flux.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_flux.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h"
+      }
+    },
+    {
+      "group": "gamera_nonorthogonal_kernels",
+      "object": "nonorthogonal_step.c.o",
+      "source": "event128/native/gamera_nonorthogonal_kernels/nonorthogonal_step.c",
+      "profile": 6,
+      "headers": {
+        "nonorthogonal_step.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_step.h",
+        "nonorthogonal_grid.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_grid.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h",
+        "nonorthogonal_storage.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_storage.h",
+        "nonorthogonal_flux.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_flux.h",
+        "nonorthogonal_operators.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_operators.h",
+        "nonorthogonal_state.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_state.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "finite_bfield_wrapper.o",
+      "source": "source/finite_bfield_wrapper/lfm_cube_native_bfield_finite_scan.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "global_dims.inc": "event128/native/include/lfm_cube_native_hydro/global_dims.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "finite_screen.o",
+      "source": "source/finite_screen/finite_screen.c",
+      "profile": 7,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "native_hydro_avx2.o",
+      "source": "source/native_hydro_avx2/native_hydro.F",
+      "profile": 8,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc",
+        "global_dims.inc": "event128/native/include/lfm_cube_native_hydro/global_dims.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "cube_yinyang_igrf_bridge.o",
+      "source": "event128/inherited/cube_yinyang_igrf_bridge/cube_yinyang_igrf_bridge.c",
+      "profile": 9,
+      "headers": {
+        "magnetic_tracer_invariants_v3.h": "event128/inherited/cube_yinyang_igrf_bridge/magnetic_tracer_invariants_v3.h",
+        "common.h": "event128/inherited/cube_yinyang_igrf_bridge/common.h",
+        "config.h": "event128/inherited/cube_yinyang_igrf_bridge/config.h",
+        "background_coeffs.h": "event128/inherited/cube_yinyang_igrf_bridge/background_coeffs.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "yy_exact_unique_points.o",
+      "source": "source/yy_exact_unique_points/yy_exact_unique_points.c",
+      "profile": 10,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_igrf.o",
+      "source": "source/lfm_cube_yy_igrf/lfm_cube_yy_igrf.f90",
+      "profile": 11,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "yy_ct_provider.o",
+      "source": "event128/inherited/yy_ct_provider/yy_ct_provider.c",
+      "profile": 9,
+      "headers": {
+        "config.h": "event128/inherited/cube_yinyang_igrf_bridge/config.h",
+        "background_coeffs.h": "event128/inherited/cube_yinyang_igrf_bridge/background_coeffs.h",
+        "tagged_harmonic_body.inc": "event128/inherited/yy_ct_provider/tagged_harmonic_body.inc",
+        "tagged_cubic_taper.inc": "event128/inherited/yy_ct_provider/tagged_cubic_taper.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_background.o",
+      "source": "source/lfm_cube_yy_background/lfm_cube_yy_background.f90",
+      "profile": 11,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "yy_native_g2int.o",
+      "source": "source/yy_native_g2int/yy_native_g2int.F",
+      "profile": 12,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "native_bfield_BDIFFUSE.o",
+      "source": "source/native_bfield_BDIFFUSE/native_bfield_BDIFFUSE.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "global_dims.inc": "event128/native/include/lfm_cube_native_hydro/global_dims.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc",
+        "meter.inc": "event128/native/include/event/meter.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "scalar.o",
+      "source": "source/scalar/released_ghost_scalar_interpolation.c",
+      "profile": 10,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_wall_private.o",
+      "source": "source/lfm_cube_yy_wall_private/lfm_cube_yy_wall.c",
+      "profile": 13,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "current.o",
+      "source": "source/current/cube_yy_cached_current.c",
+      "profile": 14,
+      "headers": {
+        "nonorthogonal_mi.h": "event128/ports/yinyang_igrf/events/20021023/global_mi/yyg/nonorthogonal_mi.h",
+        "nonorthogonal_grid.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_grid.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_magnetic_wall.o",
+      "source": "source/lfm_cube_yy_magnetic_wall/lfm_cube_yy_magnetic_wall.f90",
+      "profile": 15,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "yy_magnetic_wall.o",
+      "source": "event128/inherited/yy_magnetic_wall/yy_magnetic_wall.c",
+      "profile": 9,
+      "headers": {
+        "yy_magnetic_wall.h": "event128/inherited/prepared_magnetic_wall/yy_magnetic_wall.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h",
+        "config.h": "event128/inherited/cube_yinyang_igrf_bridge/config.h",
+        "background_coeffs.h": "event128/inherited/cube_yinyang_igrf_bridge/background_coeffs.h",
+        "harmonic_geometry_cache.h": "event128/inherited/yy_magnetic_wall/harmonic_geometry_cache.h",
+        "tagged_rotating_harmonics.inc": "event128/inherited/yy_magnetic_wall/tagged_rotating_harmonics.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "yy_ct_source.o",
+      "source": "source/yy_ct_source/yy_ct_source.c",
+      "profile": 16,
+      "headers": {
+        "yy_ct_source.h": "headers/b257bfef8169d5b9/yy_ct_source.h",
+        "nonorthogonal_grid.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_grid.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h",
+        "nonorthogonal_step.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_step.h",
+        "nonorthogonal_storage.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_storage.h",
+        "nonorthogonal_flux.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_flux.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "yy_inner_fluid_flux.o",
+      "source": "source/yy_inner_fluid_flux/yy_inner_fluid_flux.c",
+      "profile": 17,
+      "headers": {
+        "nonorthogonal_step.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_step.h",
+        "nonorthogonal_grid.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_grid.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h",
+        "nonorthogonal_storage.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_storage.h",
+        "nonorthogonal_flux.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_flux.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "yy_background_pressure_delta.o",
+      "source": "source/yy_background_pressure_delta/yy_background_pressure_delta.f90",
+      "profile": 18,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_mapping.o",
+      "source": "source/lfm_cube_yy_mapping/lfm_cube_yy_mapping.f90",
+      "profile": 19,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_native_cap_frame.o",
+      "source": "event128/inherited/lfm_cube_yy_native_cap_frame/lfm_cube_yy_native_cap_frame.f90",
+      "profile": 20,
+      "headers": {
+        "yy_rotation_profile.inc": "event128/reference-source/yy_rotation_profile.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "yy_hydro_reference_basis.o",
+      "source": "source/yy_hydro_reference_basis/yy_hydro_reference_basis.f90",
+      "profile": 21,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "full_bg_pressure_delta.o",
+      "source": "source/full_bg_pressure_delta/full_bg_pressure_delta.f90",
+      "profile": 22,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "full_bg_g2int.o",
+      "source": "source/full_bg_g2int/full_bg_g2int.F",
+      "profile": 23,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "full_A_callbacks_memo.o",
+      "source": "source/full_A_callbacks_memo/full_A_callbacks_memo.f90",
+      "profile": 21,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "full_A_memo.o",
+      "source": "source/full_A_memo/full_A_memo.c",
+      "profile": 24,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "ct_physical_callbacks.o",
+      "source": "source/ct_physical_callbacks/ct_physical_callbacks.f90",
+      "profile": 25,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "ct_physical_memo.o",
+      "source": "source/ct_physical_memo/ct_physical_memo.c",
+      "profile": 24,
+      "headers": {
+        "config.h": "event128/inherited/cube_yinyang_igrf_bridge/config.h",
+        "tagged_cubic_taper.inc": "event128/inherited/yy_ct_provider/tagged_cubic_taper.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "reference_callbacks_alias.o",
+      "source": "source/reference_callbacks_alias/alias.f90",
+      "profile": 26,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_exact_cap_lookup.o",
+      "source": "source/lfm_cube_exact_cap_lookup/lfm_cube_exact_cap_lookup.f90",
+      "profile": 27,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_boundary.o",
+      "source": "source/lfm_cube_yy_boundary/lfm_cube_yy_boundary.f90",
+      "profile": 27,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "prepared_full_field.o",
+      "source": "event128/inherited/prepared_full_field/prepared_full_field.c",
+      "profile": 9,
+      "headers": {
+        "magnetic_tracer_invariants_v3.h": "event128/inherited/cube_yinyang_igrf_bridge/magnetic_tracer_invariants_v3.h",
+        "common.h": "event128/inherited/cube_yinyang_igrf_bridge/common.h",
+        "config.h": "event128/inherited/cube_yinyang_igrf_bridge/config.h",
+        "background_coeffs.h": "event128/inherited/cube_yinyang_igrf_bridge/background_coeffs.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "frame_cache_wrapper.o",
+      "source": "source/frame_cache_wrapper/lfm_cube_native_hydro_frame_cache.F",
+      "profile": 1,
+      "headers": {
+        "param.inc": "event128/native/include/lfm_cube_native_hydro/param.inc",
+        "mdims.inc": "event128/native/include/lfm_cube_native_hydro/mdims.inc",
+        "help.inc": "event128/native/include/lfm_cube_native_hydro/help.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "frame_validation_cache.o",
+      "source": "source/frame_validation_cache/frame_validation_cache.c",
+      "profile": 28,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "direct_reference_avx2.o",
+      "source": "source/direct_reference_avx2/direct_reference_avx2.c",
+      "profile": 29,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "contiguous_lossless_reference.o",
+      "source": "source/contiguous_lossless_reference/contiguous_lossless_reference.c",
+      "profile": 29,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "prepared_magnetic_wall.o",
+      "source": "event128/inherited/prepared_magnetic_wall/prepared_magnetic_wall.c",
+      "profile": 9,
+      "headers": {
+        "yy_magnetic_wall.h": "event128/inherited/prepared_magnetic_wall/yy_magnetic_wall.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h",
+        "config.h": "event128/inherited/cube_yinyang_igrf_bridge/config.h",
+        "background_coeffs.h": "event128/inherited/cube_yinyang_igrf_bridge/background_coeffs.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "plane_packing.o",
+      "source": "source/plane_packing/plane_packing.c",
+      "profile": 30,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "solar_wind.o",
+      "source": "event128/inherited/solar_wind/solar_wind.c",
+      "profile": 31,
+      "headers": {
+        "solar_wind.h": "event128/inherited/cube_event_wind/solar_wind.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "solar_wind_hdf5.o",
+      "source": "event128/inherited/solar_wind_hdf5/solar_wind_hdf5.c",
+      "profile": 31,
+      "headers": {
+        "solar_wind.h": "event128/inherited/cube_event_wind/solar_wind.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "nonorthogonal_electron_precipitation.o",
+      "source": "event128/inherited/nonorthogonal_electron_precipitation/nonorthogonal_electron_precipitation.c",
+      "profile": 31,
+      "headers": {
+        "nonorthogonal_electron_precipitation.h": "event128/inherited/cube_yy_aurora/nonorthogonal_electron_precipitation.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "cube_yy_aurora.o",
+      "source": "event128/inherited/cube_yy_aurora/cube_yy_aurora.c",
+      "profile": 31,
+      "headers": {
+        "cube_yy_aurora.h": "event128/inherited/cube_yy_aurora/cube_yy_aurora.h",
+        "nonorthogonal_electron_precipitation.h": "event128/inherited/cube_yy_aurora/nonorthogonal_electron_precipitation.h",
+        "auroral_dpb_mask.h": "event128/inherited/cube_yy_aurora/auroral_dpb_mask.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "cube_event_wind.o",
+      "source": "event128/inherited/cube_event_wind/cube_event_wind.c",
+      "profile": 31,
+      "headers": {
+        "solar_wind.h": "event128/inherited/cube_event_wind/solar_wind.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "cube_event_dpb.o",
+      "source": "event128/inherited/cube_event_dpb/cube_event_dpb.c",
+      "profile": 9,
+      "headers": {
+        "event_model_config.h": "event128/event-headers/event_model_config.h",
+        "nonorthogonal_mi_dpb.h": "event128/inherited/cube_event_dpb/nonorthogonal_mi_dpb.h",
+        "cgm_lookup.h": "event128/inherited/cube_event_dpb/cgm_lookup.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "nonorthogonal_mi_dpb.o",
+      "source": "event128/inherited/nonorthogonal_mi_dpb/nonorthogonal_mi_dpb.c",
+      "profile": 9,
+      "headers": {
+        "nonorthogonal_mi_dpb.h": "event128/inherited/cube_event_dpb/nonorthogonal_mi_dpb.h",
+        "periodic_oval.h": "event128/inherited/nonorthogonal_mi_dpb/periodic_oval.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_cap_state.o",
+      "source": "event128/inherited/lfm_cube_yy_cap_state/lfm_cube_yy_cap_state.F",
+      "profile": 3,
+      "headers": {
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "ion_bridge_common.inc": "event128/native/include/lfm_cube_native_mi/ion_bridge_common.inc",
+        "volts.inc": "event128/native/include/lfm_cube_native_mi/volts.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_native_mi.o",
+      "source": "event128/inherited/lfm_cube_yy_native_mi/lfm_cube_yy_native_mi.F",
+      "profile": 3,
+      "headers": {
+        "lfm_sw_state.inc": "event128/native/include/lfm_cube_native_mi/lfm_sw_state.inc",
+        "ion_bridge_common.inc": "event128/native/include/lfm_cube_native_mi/ion_bridge_common.inc",
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "iongeo.inc": "event128/native/include/lfm_cube_native_mi/iongeo.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_mi_convergence.o",
+      "source": "event128/inherited/lfm_cube_yy_mi_convergence/lfm_cube_yy_mi_convergence.F",
+      "profile": 3,
+      "headers": {
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "curint.inc": "event128/native/include/lfm_legacy_ionosphere_serial/curint.inc",
+        "curint_y2.inc": "event128/native/include/lfm_legacy_ionosphere_serial/curint_y2.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "checked_tensor.o",
+      "source": "event128/compiled/checked_tensor.c",
+      "profile": 32,
+      "headers": {
+        "nonorthogonal_mi_global.c": "event128/ports/yinyang_igrf/events/20021023/global_mi/yyg/nonorthogonal_mi_global.c",
+        "nonorthogonal_mi_global.h": "event128/ports/yinyang_igrf/events/20021023/global_mi/yyg/nonorthogonal_mi_global.h",
+        "nonorthogonal_mi.h": "event128/ports/yinyang_igrf/events/20021023/global_mi/yyg/nonorthogonal_mi.h",
+        "nonorthogonal_grid.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_grid.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h",
+        "tensor_gmres.inc": "event128/ports/yinyang_igrf/events/20021023/global_mi/yyg/tensor_gmres.inc",
+        "tensor_direct.inc": "event128/ports/yinyang_igrf/events/20021023/global_mi/yyg/tensor_direct.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "global_tensor.o",
+      "source": "event128/compiled/global_tensor.c",
+      "profile": 32,
+      "headers": {
+        "nonorthogonal_mi_global.h": "event128/ports/yinyang_igrf/events/20021023/global_mi/yyg/nonorthogonal_mi_global.h",
+        "nonorthogonal_mi.h": "event128/ports/yinyang_igrf/events/20021023/global_mi/yyg/nonorthogonal_mi.h",
+        "nonorthogonal_grid.h": "event128/native/include/gamera_nonorthogonal_kernels/nonorthogonal_grid.h",
+        "nonorthogonal_geometry.h": "event128/inherited/prepared_magnetic_wall/nonorthogonal_geometry.h"
+      }
+    },
+    {
+      "group": "event",
+      "object": "branch_wall.o",
+      "source": "event128/compiled/branch_wall.c",
+      "profile": 32,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "volume_cache.o",
+      "source": "event128/compiled/volume_cache.c",
+      "profile": 33,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_fac_map.o",
+      "source": "event128/compiled/lfm_cube_yy_fac_map.f90",
+      "profile": 20,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_yy_fac_source.o",
+      "source": "event128/compiled/lfm_cube_yy_fac_source.f90",
+      "profile": 20,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "cube_event_aurora_cap.o",
+      "source": "event128/compiled/cube_event_aurora_cap.f90",
+      "profile": 20,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "cube_event_global.o",
+      "source": "event128/compiled/cube_event_global.f90",
+      "profile": 20,
+      "headers": {
+        "yy_rotation_profile.inc": "event128/reference-source/yy_rotation_profile.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "cube_event_psislv.o",
+      "source": "event128/compiled/cube_event_psislv.F",
+      "profile": 3,
+      "headers": {
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "ion_P++_pointers.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion_P++_pointers.inc",
+        "ion_fortran_P++_arrays.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion_fortran_P++_arrays.inc",
+        "iongeo.inc": "event128/native/include/lfm_cube_native_mi/iongeo.inc",
+        "ionconst.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ionconst.inc",
+        "volts.inc": "event128/native/include/lfm_cube_native_mi/volts.inc",
+        "ion-var.inc": "event128/native/include/lfm_legacy_ionosphere_serial/ion-var.inc",
+        "gcoef.inc": "event128/native/include/lfm_legacy_ionosphere_serial/gcoef.inc",
+        "boundx.inc": "event128/native/include/lfm_legacy_ionosphere_serial/boundx.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_event_solve_cap.o",
+      "source": "event128/compiled/lfm_cube_event_solve_cap.F",
+      "profile": 3,
+      "headers": {
+        "ion-param.inc": "event128/native/include/lfm_cube_native_mi/ion-param.inc",
+        "ion_bridge_common.inc": "event128/native/include/lfm_cube_native_mi/ion_bridge_common.inc",
+        "volts.inc": "event128/native/include/lfm_cube_native_mi/volts.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_ionosphere.o",
+      "source": "event128/compiled/lfm_cube_ionosphere.f90",
+      "profile": 20,
+      "headers": {
+        "native_mi_shape.inc": "event128/reference-source/native_mi_shape.inc",
+        "yy_rotation_profile.inc": "event128/reference-source/yy_rotation_profile.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "lfm_cube_evolution.o",
+      "source": "event128/compiled/lfm_cube_evolution.f90",
+      "profile": 20,
+      "headers": {
+        "yy_rotation_profile.inc": "event128/reference-source/yy_rotation_profile.inc"
+      }
+    },
+    {
+      "group": "event",
+      "object": "cube_compact_output.o",
+      "source": "event128/compiled/cube_compact_output.f90",
+      "profile": 20,
+      "headers": {}
+    },
+    {
+      "group": "event",
+      "object": "cube_lfm.o",
+      "source": "event128/compiled/cube_lfm.f90",
+      "profile": 20,
+      "headers": {
+        "yy_rotation_profile.inc": "event128/reference-source/yy_rotation_profile.inc"
+      }
+    }
+  ]
+}

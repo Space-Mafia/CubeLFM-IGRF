@@ -1,0 +1,6 @@
+C Non-P++ replacement for the generated ionosphere ownership scalars.
+      LOGICAL ION_PE
+      INTEGER MION_I,MION_J,NION_I,NION_J
+      COMMON /LFM_RESCUE_ION_OWNER_I/ MION_I,MION_J,NION_I,NION_J
+      COMMON /LFM_RESCUE_ION_OWNER_L/ ION_PE
+      SAVE /LFM_RESCUE_ION_OWNER_I/,/LFM_RESCUE_ION_OWNER_L/
